@@ -8,7 +8,6 @@ import json
 records = [json.loads(line) for line in open(path)]
 records[0]
 records[0]['tz']
-time_zones = [rec['tz'] for rec in records]
 time_zones = [rec['tz'] for rec in records if 'tz' in rec]
 time_zones[:10]
 len(time_zones)
